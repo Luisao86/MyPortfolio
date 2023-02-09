@@ -1,0 +1,80 @@
+
+.grid-footer {
+    grid-area: footer;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    
+}
+
+.contenedor .boton {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    
+    margin: 0 5px;
+    background: rgb(255, 101, 105);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba (0, 0, 0, 0.1);
+    transition: all .4s ease-out;
+    overflow: hidden;
+}
+.contenedor .boton .icono {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all .4s ease-out;
+}
+.contenedor .boton .icono i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.contenedor .boton span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 5px;
+}
+.contenedor .boton:hover {
+    width: 200px;
+}
+.contenedor .boton:nth-child(1):hover .icono{
+    background: #128c7e;
+}
+.contenedor .boton:nth-child(2):hover .icono{
+    background: #4267b2;
+}    
+.contenedor .boton:nth-child(3):hover .icono{
+        background: #e0e;
+}
+.contenedor .boton:nth-child(4):hover .icono{
+            background: #606;
+}       
+.contenedor .boton:hover .icono i {
+    color: #fff;
+}
+.contenedor .boton:nth-child(1):hover span {
+    color: #128c7e;
+}
+.contenedor .boton:nth-child(2):hover span {
+    color: #4267b2;
+}
+.contenedor .boton:nth-child(3):hover span {
+    color: #e0e;
+}
+.contenedor .boton:nth-child(4):hover span {
+    color: #606;
+}
+
+#info {
+    background-color: rgb(255, 101, 105) !important;
+}
