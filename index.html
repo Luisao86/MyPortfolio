@@ -9,6 +9,7 @@
     <link rel="icon" href="./img/logo.ico">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -22,7 +23,7 @@
                     <h5><a class="nav-link btn btn-primary" href="#">Sobre Mi</a></h5>
                 </li>
                 <li class="nav-item mx-4">
-                    <h5><a class="nav-link btn btn-primary" href="#">Hablame</a></h5>
+                    <h5><a class="nav-link btn btn-primary" href="./message/mensaje.html">Hablame</a></h5>
                 </li>
             </ul>
         </nav>
@@ -30,9 +31,7 @@
     <!-- final NAV-->
     <header>
         <div class="text-center mt-5">
-            <h1><strong>Luis A. Funes</strong></h1>
-            <h3>Desarrollador Web Fullstack en proceso</h3>
-            <h5>En busqueda de mi primer oportunidad laboral</h5>
+            <h1><strong>Desarrollador Web Fullstack en proceso</strong></h1>
         </div>
         <div class=" text-center mt-5">
             <img src="./img/Avatar.png" alt="Avatar" width="250" class="">
@@ -41,12 +40,13 @@
             <img height="500" src="./img/layer.svg" alt="">
         </div>
     </header>
-    <section id="info" class="section">
-        <div class="text-center row">
-            <div class="text-center col-md-6 offset-md-3 p-4">
-                <h3 class="text-light pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At aliquam
-                    nisi
-                    ratione, perspiciatis</h3>
+    <div class="wave">
+        <img src="./img/wave.svg" alt="wave">
+    </div>
+    <section id="info" >
+        <div class="text-center">
+            <div class="p-4 col-md-8 offset-md-2">
+                <h2 class="text-light pt-3"><strong>Hola,mi nombre es Luis Funes.</strong></h2>
                 <br />
                 <h4 class="text-light pt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Repellendus,
@@ -59,63 +59,89 @@
     </section>
     <section id="tecnologias">
         <div class="container  hstack gap-2 text-center d-flex justify-content-evenly">
-            <div class="card">
-                <img class="card-img-top" data-src="holder.js/100x180/?text=Image cap" alt="Card image cap">
+            <div class="">
+                <img class="mt-2 p-4" src="./img/dev.svg" width="200" alt="">
                 <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Text</p>
+                    <h4 class="card-title"><strong>Desarrollo</strong></h4>
+                    <p class="card-text mt-3"><strong>Leguajes que utilizo: </strong> </p>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Item 1</li>
-                    <li class="list-group-item">Item 2</li>
-                    <li class="list-group-item">Item 3</li>
+                <ul class="list-group list-group-flush mt-3">
+                    <li class="list-group-item pt-2"><strong>HTML</strong></li>
+                    <li class="list-group-item pt-2"><strong>CSS</strong></li>
+                    <li class="list-group-item pt-2"><strong>Javascript</strong></li>
+                    <li class="list-group-item pt-2"><strong>PHP</strong></li>
+                    <li class="list-group-item pt-2"><strong>SQL</strong></li>
+                    <li class="list-group-item pt-2"><strong>Git</strong></li>
                 </ul>
             </div>
-            <div class="card my-4">
-                <img width="50" class="card-img-top" src="" alt="Card image cap">
+            <div class="my-5">
+                <img width="200" class="mt-5 "  src="./img/tools.svg" alt="">
                 <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Text</p>
+                    <h4 class="card-title"><strong>Tools</strong></h4>
+                    <p class="card-text"><strong>Herramientas que utilizo: </strong></p>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Item 1</li>
-                    <li class="list-group-item">Item 2</li>
-                    <li class="list-group-item">Item 3</li>
+                <ul class="list-group list-group-flush mt-3">
+                    <li class="list-group-item pt-2"><strong>Bootstrap</strong></li>
+                    <li class="list-group-item pt-2"><strong>Laravel</strong></li>
+                    <li class="list-group-item pt-2"><strong>Github</strong></li>
+                    <li class="list-group-item pt-2"><strong>Nodejs</strong></li>
+                    <li class="list-group-item pt-2"><strong>MySQL</strong></li>
+                    <li class="list-group-item pt-2"><strong>Xampp</strong></li>
+                    <li class="list-group-item pt-2"><strong>Visual Studio Code</strong></li>
                 </ul>
             </div>
         </div>
     </section>
-    <section id="contacto">
-        <div class="d-flex justify-content-center my-4">
-
-            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-        </div>
-        <div class="modal-body d-flex justify-content-center">
-            <form>
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Email:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+    <section id="proyects">
+             <!-- aca va cards con informacion-->
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top" data-src="holder.js/100x180/" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Text</p>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+                <div class="card">
+                    <img class="card-img-top" data-src="holder.js/100x180/" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Text</p>
+                    </div>
                 </div>
-            </form>
-        </div>
-        <div class="modal-footer justify-content-center">
-
-            <button type="button" class="btn btn-success mt-5">Send message</button>
-
-        </div>
+            </div>
     </section>
-
+    
+    <div>
+        <img src="./img/wave.svg" alt="wave">
+    </div>
     <footer>
-        <div class="container my-4">
-            <div class="row text-center">
-                <p>
-                <h1>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</h1>
-                </p>
+        <div class="contenedor text-center text-light">
+            <div class="boton">
+                <div class="icono">
+                    <i class="fa fa-whatsapp"></i>
+                </div>
+                <span><strong>whatsapp</strong> </span><strong></strong>
             </div>
+            <div class="boton">
+                <div class="icono">
+                    <i class="fa fa-linkedin"></i>
+                </div>
+                <span><strong>Linkedin</strong></span>
+            </div>
+            <div class="boton">
+                <div class="icono">
+                    <i class="fa fa-instagram"></i>
+                </div>
+                <span><strong>Instagram</strong></span>
+            </div>
+            <div class="boton">
+                <div class="icono">
+                    <i class="fa fa-github"></i>
+                </div>
+                <span><strong>Github</strong></span>
+            </div>
+        </div>
         </div>
     </footer>
 

@@ -63,7 +63,7 @@
     color: #fff;
 }
 .contenedor .boton:nth-child(1):hover span {
-    color: #128c7e;
+    color: #fff;
 }
 .contenedor .boton:nth-child(2):hover span {
     color: #4267b2;
@@ -77,4 +77,15 @@
 
 #info {
     background-color: rgb(255, 101, 105) !important;
+}
+.btn-color:active {
+    background-color: rgb(255, 101, 105) !important;
+    color: #fff !important;
+}
+.btn-color:hover {
+    background-color: rgb(255, 220, 220) ;
+}
+footer{
+    background-color: rgb(255, 101, 105);
+    height: 200px;
 }
