@@ -9,6 +9,7 @@
     <link rel="icon" href="./img/logo.ico">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -21,31 +22,85 @@
                 <li class="nav-item active">
                     <h5><a class="nav-link btn btn-primary mx-4" href="../index.html#info">Sobre Mi</a></h5>
                 </li>
+                <li class="nav-item active">
+                    <h5><a class="nav-link btn btn-primary mx-4" href="../index.html">Inicio</a></h5>
+                </li>
             </ul>
         </nav>
     </div>
     <!-- final NAV-->
 
-    <section id="contacto">
+    <section id="contacto" class="col-">
         <div class="d-flex justify-content-center my-4">
 
-            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <h3 class="modal-title" id="exampleModalLabel"><strong>Contactame</strong></h3>
         </div>
-        <div class="modal-body d-flex justify-content-center">
-            <form>
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Email:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+        <div class="modal-body d-flex justify-content-center ">
+            <div class="container">
+                <div class="row">
+                    <form class="col-md-6 col-lg-4 col-sm-9 mx-auto" action="send_msj.php" method="POST">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="recipient-name" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Asunto:</label>
+                            <input type="text" class="form-control" id="recipient-name" name="asunto" id="asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="recipient-name" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Mensaje:</label>
+                            <textarea class="form-control" id="message-text" name="mensaje" required></textarea>
+                        </div>
+                        
+                        <div class="modal-footer justify-content-center">
+                            <button type="submit" class="btn btn-color mt-5">Enviar Mensaje</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
-                </div>
-            </form>
+            </div>
         </div>
-        <div class="modal-footer justify-content-center">
-
-            <button type="button" class="btn btn-color mt-5">Send message</button>
-
-        </div>
+       
     </section>
+
+    <div>
+        <img src="../img/wave.svg" alt="wave">
+    </div>
+    <footer>
+        <div class="contenedor text-center text-light">
+            <div class="boton">
+                <div class="icono">
+                    <i class="fa fa-whatsapp"></i>
+                </div>
+                <span><strong>whatsapp</strong> </span><strong></strong>
+            </div>
+            <div class="boton">
+                <div class="icono">
+                    <i class="fa fa-linkedin"></i>
+                </div>
+                <span><strong>Linkedin</strong></span>
+            </div>
+            <div class="boton">
+                <div class="icono">
+                    <i class="fa fa-instagram"></i>
+                </div>
+                <span><strong>Instagram</strong></span>
+            </div>
+            <div class="boton">
+                <div class="icono">
+                    <i class="fa fa-github"></i>
+                </div>
+                <span><strong>Github</strong></span>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

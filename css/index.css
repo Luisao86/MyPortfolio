@@ -66,13 +66,13 @@
     color: #fff;
 }
 .contenedor .boton:nth-child(2):hover span {
-    color: #4267b2;
+    color: #fff;
 }
 .contenedor .boton:nth-child(3):hover span {
-    color: #e0e;
+    color: #fff;
 }
 .contenedor .boton:nth-child(4):hover span {
-    color: #606;
+    color: #fff;
 }
 
 #info {
