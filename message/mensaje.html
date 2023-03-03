@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- comienzo NAV  -->
-    <div>
+    <div data-aos="fade-down">
         <nav class="navbar navbar-expand navbar-light bg-light">
             <img width="70" src="../img/logo.png" alt="LOGO">
             <ul class="nav navbar-nav ms-auto">
@@ -30,7 +30,7 @@
     </div>
     <!-- final NAV-->
 
-    <section id="contacto" class="col-">
+    <section id="contacto" class="col-" data-aos="fade-right">
         <div class="d-flex justify-content-center my-4">
 
             <h3 class="modal-title" id="exampleModalLabel"><strong>Contactame</strong></h3>
@@ -45,7 +45,8 @@
                         </div>
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Asunto:</label>
-                            <input type="text" class="form-control" id="recipient-name" name="asunto" id="asunto" required>
+                            <input type="text" class="form-control" id="recipient-name" name="asunto" id="asunto"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Email:</label>
@@ -55,7 +56,7 @@
                             <label for="message-text" class="col-form-label">Mensaje:</label>
                             <textarea class="form-control" id="message-text" name="mensaje" required></textarea>
                         </div>
-                        
+
                         <div class="modal-footer justify-content-center">
                             <button type="submit" class="btn btn-color mt-5">Enviar Mensaje</button>
                         </div>
@@ -63,44 +64,36 @@
                 </div>
             </div>
         </div>
-       
+
     </section>
-
-    <div>
-        <img src="../img/wave.svg" alt="wave">
+    <div class="tot-footer" data-aos="fade-up">
+        <div>
+            <img src="../img/wave.svg" alt="wave">
+        </div>
+        <footer>
+            <div class="contenedor text-center text-light">
+                <div class="boton">
+                    <div class="icono">
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                    <a class="text-decoration-none" href="https://www.linkedin.com/in/luis-alberto-funes-943213125/" target="_blank"><span><strong>Linkedin</strong></span></a>
+                </div>
+                <div class="boton">
+                    <div class="icono">
+                        <i class="fa fa-github"></i>
+                    </div>
+                    <a class="text-decoration-none" href="https://github.com/Luisao86" target="_blank"><span><strong>Github</strong></span></a>
+                </div>
+            </div>
     </div>
-    <footer>
-        <div class="contenedor text-center text-light">
-            <div class="boton">
-                <div class="icono">
-                    <i class="fa fa-whatsapp"></i>
-                </div>
-                <span><strong>whatsapp</strong> </span><strong></strong>
-            </div>
-            <div class="boton">
-                <div class="icono">
-                    <i class="fa fa-linkedin"></i>
-                </div>
-                <span><strong>Linkedin</strong></span>
-            </div>
-            <div class="boton">
-                <div class="icono">
-                    <i class="fa fa-instagram"></i>
-                </div>
-                <span><strong>Instagram</strong></span>
-            </div>
-            <div class="boton">
-                <div class="icono">
-                    <i class="fa fa-github"></i>
-                </div>
-                <span><strong>Github</strong></span>
-            </div>
-        </div>
-        </div>
     </footer>
+    </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="../js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

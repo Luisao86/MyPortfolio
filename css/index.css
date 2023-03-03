@@ -1,3 +1,31 @@
+body::-webkit-scrollbar{
+    width: 12px;
+    background:rgb(255, 101, 105); 
+}
+body::-webkit-scrollbar-thumb{
+    background:rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    border-right: 3px solid rgb(255, 101, 105);
+}
+.onload {
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#loader {
+
+    width: 100vw;
+    background-color: #fff;
+    margin: 0%;
+    padding: 0;
+}
+
+.hidden {
+    overflow: hidden;
+}
 
 .grid-footer {
     grid-area: footer;
@@ -8,14 +36,14 @@
     justify-content: center;
     align-items: center;
     place-items: center;
-    
+
 }
 
 .contenedor .boton {
     display: inline-block;
     width: 60px;
     height: 60px;
-    
+
     margin: 0 5px;
     background: rgb(255, 101, 105);
     border-radius: 50px;
@@ -24,6 +52,7 @@
     transition: all .4s ease-out;
     overflow: hidden;
 }
+
 .contenedor .boton .icono {
     display: inline-block;
     height: 60px;
@@ -34,58 +63,121 @@
     line-height: 60px;
     transition: all .4s ease-out;
 }
-.contenedor .boton .icono i{
+
+.contenedor .boton .icono i {
     font-size: 30px;
     line-height: 60px;
 }
+
 .contenedor .boton span {
     font-size: 18px;
     font-weight: 500;
     line-height: 60px;
     margin-left: 5px;
 }
+
 .contenedor .boton:hover {
     width: 200px;
 }
-.contenedor .boton:nth-child(1):hover .icono{
-    background: #128c7e;
-}
-.contenedor .boton:nth-child(2):hover .icono{
+
+
+.contenedor .boton:nth-child(1):hover .icono {
     background: #4267b2;
-}    
-.contenedor .boton:nth-child(3):hover .icono{
-        background: #e0e;
 }
-.contenedor .boton:nth-child(4):hover .icono{
-            background: #606;
-}       
+
+.contenedor .boton:nth-child(2):hover .icono {
+    background: #606;
+}
+
+
 .contenedor .boton:hover .icono i {
     color: #fff;
 }
+
 .contenedor .boton:nth-child(1):hover span {
     color: #fff;
 }
+
 .contenedor .boton:nth-child(2):hover span {
     color: #fff;
 }
-.contenedor .boton:nth-child(3):hover span {
-    color: #fff;
-}
-.contenedor .boton:nth-child(4):hover span {
-    color: #fff;
-}
+
+
+
 
 #info {
     background-color: rgb(255, 101, 105) !important;
 }
+
 .btn-color:active {
     background-color: rgb(255, 101, 105) !important;
     color: #fff !important;
 }
+
 .btn-color:hover {
-    background-color: rgb(255, 220, 220) ;
+    background-color: rgb(255, 220, 220);
 }
-footer{
+
+footer {
     background-color: rgb(255, 101, 105);
     height: 200px;
+}
+
+/*Comienzo de Texto animado*/
+
+div h1 strong span {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 38ch;
+    letter-spacing: px;
+
+    animation: escribir 3s steps(40), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes escribir {
+    from {
+        width: 0%
+    }
+
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div h1 strong span {
+        display: block;
+        font-family: monospace;
+        font-size: .6em;
+        white-space: nowrap;
+        border-right: 1px solid;
+        width: 38ch;
+        letter-spacing: px;
+
+        animation: escribir 3s steps(40), blink .5s infinite step-end alternate;
+        overflow: hidden;
+    }
+
+    @keyframes escribir {
+        from {
+            width: 0%
+        }
+
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+
+        section {
+            width: 80%;
+        }
+    }
 }

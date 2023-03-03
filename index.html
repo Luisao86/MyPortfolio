@@ -9,15 +9,19 @@
     <link rel="icon" href="./img/logo.ico">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+
     <!-- comienzo NAV  -->
-    <div>
+    <div data-aos="fade-down">
         <nav class="navbar navbar-expand navbar-light bg-light">
-            <img width="70" src="./img/logo.png" alt="LOGO">
+            <div data-aos="flip-left" data-aos-delay="200">
+                <img width="70" src="./img/logo.png" alt="LOGO">
+            </div>
             <ul class="nav navbar-nav ms-auto">
                 <li class="nav-item active">
                     <h5><a class="nav-link btn btn-primary" href="#info">Sobre Mi</a></h5>
@@ -29,16 +33,18 @@
         </nav>
     </div>
     <!-- final NAV-->
-    <header>
-        <div class="text-center mt-5">
-            <h1><strong>Desarrollador Web Fullstack en proceso</strong></h1>
-        </div>
-        <div class=" text-center mt-5">
-            <img src="./img/Avatar.png" alt="Avatar" width="250" class="">
-        </div>
-        <div class="container row">
-            <div class="text-center">
-                <img class="col-xs-6 col-lg-4 col-sm-9" src="./img/layer.svg" alt="">
+    <header data-aos="fade-up">
+        <div class="container" width="90vw">
+            <div class=" mt-5 d-flex justify-content-center " width="80vw">
+                <h1><strong><span>Desarrollador Web Fullstack en proceso </span></strong></h1><br>
+            </div>
+            <div class=" text-center mt-5" data-aos="flip-left" data-aos-delay="400">
+                <img src="./img/Avatar.png" alt="Avatar" width="200" class="">
+            </div>
+            <div class="container" data-aos="fade-down" data-aos-delay="200">
+                <div class="text-center">
+                    <img class="col-xs-6 col-lg-12 col-sm-9" src="./img/layer.svg" alt="">
+                </div>
             </div>
         </div>
     </header>
@@ -46,23 +52,21 @@
         <img src="./img/wave.svg" alt="wave">
     </div>
     <section id="info">
-        <div class="text-center">
-            <div class="p-4 col-md-8 offset-md-2">
-                <h2 class="text-light pt-3"><strong>Hola,mi nombre es Luis Funes.</strong></h2>
+        <div class="text-center d-flex justify-content-center">
+            <div class=" col-md-8 p-4" data-aos="fade-up">
+                <h2 class="text-light pt-0"><strong>Hola, mi nombre es Luis Funes.</strong></h2>
                 <br />
-                <h4 class="text-light pt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellendus,
-                    sapiente? Laudantium tenetur
-                    dolorem eaque veniam adipisci, vero quaerat minima, reiciendis similique maiores delectus
-                    blanditiis
-                    reprehenderit temporibus deserunt ipsa culpa assumenda?</h4>
+                <h4 class="text-light pt-3 pb-5">Soy padre de una hija de 10 meses, actualmente estoy desempleado, el
+                    tiempo en mi anterior empleo lo he dedicado a la incorporación de conocimientos en programación, con
+                    lo cual obtuve mi <b>Diplomatura en Desarrollo Web Fullstack</b>, en la <strong>Universidad
+                        Tecnologica Nacional</strong> (U.T.N.). También adquirí conocimientos de forma autodidacta.</h4>
             </div>
         </div>
     </section>
     <section id="tecnologias">
-        <div class="container  hstack gap-2 text-center d-flex justify-content-evenly">
-            <div class="">
-                <img class="mt-2 p-4" src="./img/dev.svg" width="200" alt="">
+        <div class="container  hstack gap-2 text-center d-flex justify-content-evenly px-0">
+            <div data-aos="flip-right">
+                <img class="mt-2 p-4" src="./img/dev.svg" width="150" alt="">
                 <div class="card-body">
                     <h4 class="card-title"><strong>Desarrollo</strong></h4>
                     <p class="card-text mt-3"><strong>Leguajes que utilizo: </strong> </p>
@@ -76,8 +80,8 @@
                     <li class="list-group-item pt-2"><strong>Git</strong></li>
                 </ul>
             </div>
-            <div class="my-5">
-                <img width="200" class="mt-5 " src="./img/tools.svg" alt="">
+            <div class="my-5" data-aos="flip-left">
+                <img width="150" class="mt-5 " src="./img/tools.svg" alt="">
                 <div class="card-body">
                     <h4 class="card-title"><strong>Tools</strong></h4>
                     <p class="card-text"><strong>Herramientas que utilizo: </strong></p>
@@ -95,60 +99,111 @@
         </div>
     </section>
     <section id="proyects">
-        <!-- aca va cards con informacion-->
-        <div class="card-group">
-            <div class="card">
-                <img class="card-img-top" data-src="holder.js/100x180/" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Text</p>
+        <div class="container d-flex justify-content-center mb-5">
+            <div id="titulo">
+                <h3><strong>Mis proyectos</strong></h3>
+            </div>
+        </div>
+       
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/captcha.png" class="d-block w-100" alt="captcha">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="https://aprendiendofullstack.000webhostapp.com/captcha%20-finalizado-/index.php"
+                            target="_blank">
+                            <h5>Ver Proyecto</h5>
+                        </a>
+                        <p>Un simple generador de Captcha realizado con HTML, CSS y PHP.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/botones.png" class="d-block w-100" alt="botones">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="https://aprendiendofullstack.000webhostapp.com/Practica%20botones%20footer%20-Finalizado-/Botones-v1/index.html"
+                            target="_blank">
+                            <h5>Ver Proyecto</h5>
+                        </a>
+                        <p class="text-dark">Links footer realizados con HTML y CSS.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/listadetareas.png" class="d-block w-100" alt="Lista de tareas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="https://aprendiendofullstack.000webhostapp.com/lista%20de%20tareas%20-EN%20PROCESO-/lista/index.html"
+                            target="_blank">
+                            <h5>Ver Proyecto</h5>
+                        </a>
+                        <p class="text-dark">To do List realizada con HTML, CSS y JavaScript.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/fondo.png" class="d-block w-100 "  alt="Lista de tareas">
+                    <div class="carousel-caption d-none d-md-block d-flex align-items-center">
+                        <div class="container">
+                        <!-- <a href="" target=""> -->
+                            <!-- <h5>Ver Proyecto</h5> -->
+                        </a>
+                        <p class="text-light">Me encuentro finalizando un CRUD con HTML, CSS, Bootstrap,JavaScript, PHP y MySQL</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img class="card-img-top" data-src="holder.js/100x180/" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text">Text</p>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
-    <div>
-        <img src="./img/wave.svg" alt="wave">
+    <div class="tot-footer" data-aos="fade-up">
+        <div>
+            <img src="./img/wave.svg" alt="wave">
+        </div>
+        <footer>
+            <div class="contenedor text-center text-light">
+                <div class="boton">
+                    <div class="icono">
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                    <a class="text-decoration-none" href="https://www.linkedin.com/in/luis-alberto-funes-943213125/"
+                        target="_blank"><span><strong>Linkedin</strong></span></a>
+                </div>
+                <div class="boton">
+                    <div class="icono">
+                        <i class="fa fa-github"></i>
+                    </div>
+                    <a class="text-decoration-none" href="https://github.com/Luisao86"
+                        target="_blank"><span><strong>Github</strong></span></a>
+                </div>
+            </div>
     </div>
-    <footer>
-        <div class="contenedor text-center text-light">
-            <div class="boton">
-                <div class="icono">
-                    <i class="fa fa-whatsapp"></i>
-                </div>
-                <span><strong>whatsapp</strong> </span><strong></strong>
-            </div>
-            <div class="boton">
-                <div class="icono">
-                    <i class="fa fa-linkedin"></i>
-                </div>
-                <span><strong>Linkedin</strong></span>
-            </div>
-            <div class="boton">
-                <div class="icono">
-                    <i class="fa fa-instagram"></i>
-                </div>
-                <span><strong>Instagram</strong></span>
-            </div>
-            <div class="boton">
-                <div class="icono">
-                    <i class="fa fa-github"></i>
-                </div>
-                <span><strong>Github</strong></span>
-            </div>
-        </div>
-        </div>
     </footer>
-
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
 </body>
 
 </html>
